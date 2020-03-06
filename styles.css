@@ -1,9 +1,16 @@
 #container {
     position: relative;
     left: 50px;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border: 5px black solid;
     background-color: #EEE;
     cursor: pointer;
+}
+#ball {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  transform: translateY(-50%);
 }
