@@ -12,11 +12,22 @@ function moveBall(event) {
     ball.style.top = yPosition + 5 + "px";
 }
 
-container.addEventListener("keypress", moveDog);
+window.addEventListener("keypress", moveDog);
 
 function moveDog() {
-    let xPosition = ball.style.left;
-    let yPosition = ball.style.top;
+    let xPosition = event.clientX;
+    let yPosition = event.clientY;
     dog.style.left = xPosition + "px";
     dog.style.top = yPosition + "px";
+}
+
+container.addEventListener('dblclick', changeBallColor);
+
+function changeBallColor() {
+  let color = ball.style.fill;
+  if(color == "limegreen") {
+    ball.style.fill = "blue";
+  } else {
+    ball.style.fill = "limegreen";
+  }
 }
