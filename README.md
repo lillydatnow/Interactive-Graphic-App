@@ -1,7 +1,7 @@
 # Interactive-Graphic-App
 
 
-#Controls
+# Controls
 
 -Click - Move ball to the mouses location
 
